@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="844.8,2309.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.MLServices;assembly=UiPath.MLServices" xmlns:uma="clr-namespace:UiPath.MLServices.Activities;assembly=UiPath.MLServices.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.MLServices</x:String>
+      <x:String>UiPath.MLServices.Enums</x:String>
+      <x:String>UiPath.MLServices.Activities</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices</AssemblyReference>
+      <AssemblyReference>UiPath.MLServices.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,2244.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractedData" />
+      <Variable x:TypeArguments="njl:JObject" Name="jsonObject">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">DeserializeJson`1_1</x:String>
+            <x:String x:Key="SourcePropertyName">JsonObject</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="529.6,521.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="ba968097-5ae9-4d9c-b1be-38b1eaf97509" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,272.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='li' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="353.6,182.4" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="ba968097-5ae9-4d9c-b1be-38b1eaf97509" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.cardekho.com/user-reviews/maruti-celerio" DesignTimeRectangle="197, 195, 1123, 7017" DesignTimeScaleFactor="1.25" ElementType="List" FullSelectorArgument="&lt;webctrl class='reviewList' tag='UL' /&gt;" Guid="cb5d8d16-0c40-4f75-af6a-49492bac3cb6" InformativeScreenshot="1c3bda08de4aee395a78fe5a1c707007.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Maruti Celerio Reviews - (MUST READ) 294 Celerio User Reviews' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="553d2655347641d9b3f2e68d7235348c.jpg" Selector="&lt;html app='chrome.exe' title='Maruti Celerio Reviews - (MUST READ) 294 Celerio User Reviews' /&gt;" Title="Maruti Celerio Reviews - (MUST READ) 294 Celerio User Reviews" Url="https://www.cardekho.com/user-reviews/maruti-celerio" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="529.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" StartingCell="A2" WorkbookPath="car review analysis.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[ExtractedData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="529.6,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="car review analysis.xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractedData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="529.6,1366.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,1177.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="JsonResponse" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uma:MLSkills ApiKey="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Name="{x:Null}" NumberOfRetries="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SkillURL="{x:Null}" StatusCode="{x:Null}" TimeOutMs="{x:Null}" Connection="Robot" DisplayName="MLSkill" ExternApiFileType="JSON" sap:VirtualizedContainerService.HintSize="433.6,443.2" sap2010:WorkflowViewState.IdRef="MLSkills_1" Item="[CurrentRow(&quot;Reviews&quot;).ToString]" JsonResponse="[JsonResponse]" NextPageNum="2" RefreshList="False" TotalCount="2">
+              <uma:MLSkills.MLSkillList>
+                <scg:List x:TypeArguments="um:MLSkill" Capacity="4">
+                  <x:Reference>__ReferenceID0</x:Reference>
+                  <um:MLSkill AccessUri="https://ai-uipath-eus.deskover.com/mlskills/ab5c5bc0-70bb-4ee8-a9c0-77c17944a931/4452b197-79e5-445a-bc12-8c7b3b1eb027/objectdetectionmlskill" AccountId="ab5c5bc0-70bb-4ee8-a9c0-77c17944a931" Description="" Id="9455edec-d985-4287-8bb1-17a3df79c0f3" InputDescription="Path to the image to be analyzed." InputType="FILE" Name="ObjectDetectionMLSkill" OutputDescription="JSON with identified object's class byte array representation (allows you to see box around objects), identified object's class - name, score (between 0-1) and bounding_boxes coordinates. Example: {&quot;Predicted ByteArray&quot;: &quot;/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgI…TD&quot;, &quot;Predicted Class&quot;: [{&quot;class&quot;: &quot;book&quot;, &quot;score&quot;: &quot; 0.65&quot;, &quot;bounding_box&quot;: [38.348690032958984, 274.14703369140625, 116.80537414550781, 306.26788330078125]}, {&quot;class&quot;: &quot;book&quot;, &quot;score&quot;: &quot; 0.62&quot;, &quot;bounding_box&quot;: [34.108882904052734, 236.6508331298828, 118.49102783203125, 272.1687316894531]}]}" ProjectId="ae39de7f-9378-429b-aaf6-8f08b29c8de8" TenantId="4452b197-79e5-445a-bc12-8c7b3b1eb027" />
+                </scg:List>
+              </uma:MLSkills.MLSkillList>
+              <uma:MLSkills.SelectedMLSkill>
+                <um:MLSkill x:Name="__ReferenceID0" AccessUri="https://ai-uipath-eus.deskover.com/mlskills/ab5c5bc0-70bb-4ee8-a9c0-77c17944a931/4452b197-79e5-445a-bc12-8c7b3b1eb027/car-review-sentiment-analysis" AccountId="ab5c5bc0-70bb-4ee8-a9c0-77c17944a931" Description="" Id="ba724a3d-fad9-49dc-9b04-f3d9a9abdfdd" InputDescription="Text to be analyzed.For example:&quot;I am dissatisfied with this service&quot;" InputType="JSON" Name="Car_review_sentiment_analysis" OutputDescription="JSON with class name and confidence on that class prediction (between 0-1). Class prediction can be one of: &quot;Very Negative&quot;, &quot;Negative&quot;, &quot;Neutral&quot;, &quot;Positive&quot;, &quot;Very Positive&quot;. For example: {&quot;sentiment&quot;: &quot;Very Negative&quot;, &quot;confidence&quot;: 0.97}" ProjectId="88817fe0-84da-4dd7-9112-f200499b7433" TenantId="4452b197-79e5-445a-bc12-8c7b3b1eb027" />
+              </uma:MLSkills.SelectedMLSkill>
+            </uma:MLSkills>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[CurrentRow("Reviews")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[JsonResponse]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A2" WorkbookPath="car review analysis.xlsx" />
+            <ui:WriteRange AddHeaders="False" DataTable="[ExtractedData]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="433.6,148" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" StartingCell="B2" WorkbookPath="car review analysis.xlsx" />
+            <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonObject]" JsonString="[JsonResponse]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[jsonObject.ToString]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
